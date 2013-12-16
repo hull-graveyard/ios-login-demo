@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF5CC866185F0D7F00F4EB92 /* HLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5CC865185F0D7F00F4EB92 /* HLUser.m */; };
 		BFBC5035185B24DA00CB3F4C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBC5034185B24DA00CB3F4C /* Foundation.framework */; };
 		BFBC5037185B24DA00CB3F4C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBC5036185B24DA00CB3F4C /* CoreGraphics.framework */; };
 		BFBC5039185B24DA00CB3F4C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBC5038185B24DA00CB3F4C /* UIKit.framework */; };
@@ -22,7 +23,6 @@
 		BFBC5064185B24EB00CB3F4C /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBC5063185B24EB00CB3F4C /* FacebookSDK.framework */; };
 		BFBC506A185B2A7000CB3F4C /* HLLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBC5069185B2A7000CB3F4C /* HLLogInViewController.m */; };
 		BFC6901E185B3FC30093FB51 /* HLWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC6901D185B3FC30093FB51 /* HLWelcomeViewController.m */; };
-		BFC69024185B4AF50093FB51 /* HLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC69023185B4AF50093FB51 /* HLUser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF5CC864185F0D7F00F4EB92 /* HLUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLUser.h; sourceTree = "<group>"; };
+		BF5CC865185F0D7F00F4EB92 /* HLUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLUser.m; sourceTree = "<group>"; };
 		BFBC5031185B24DA00CB3F4C /* LoginDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFBC5034185B24DA00CB3F4C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BFBC5036185B24DA00CB3F4C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -57,8 +59,6 @@
 		BFBC5069185B2A7000CB3F4C /* HLLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLogInViewController.m; sourceTree = "<group>"; };
 		BFC6901C185B3FC30093FB51 /* HLWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLWelcomeViewController.h; sourceTree = "<group>"; };
 		BFC6901D185B3FC30093FB51 /* HLWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLWelcomeViewController.m; sourceTree = "<group>"; };
-		BFC69022185B4AF50093FB51 /* HLUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HLUser.h; path = ../HLUser.h; sourceTree = "<group>"; };
-		BFC69023185B4AF50093FB51 /* HLUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HLUser.m; path = ../HLUser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,8 +162,8 @@
 		BFC69025185B4B020093FB51 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				BFC69022185B4AF50093FB51 /* HLUser.h */,
-				BFC69023185B4AF50093FB51 /* HLUser.m */,
+				BF5CC864185F0D7F00F4EB92 /* HLUser.h */,
+				BF5CC865185F0D7F00F4EB92 /* HLUser.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -279,7 +279,7 @@
 				BFBC5045185B24DA00CB3F4C /* HLAppDelegate.m in Sources */,
 				BFBC5041185B24DA00CB3F4C /* main.m in Sources */,
 				BFC6901E185B3FC30093FB51 /* HLWelcomeViewController.m in Sources */,
-				BFC69024185B4AF50093FB51 /* HLUser.m in Sources */,
+				BF5CC866185F0D7F00F4EB92 /* HLUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
