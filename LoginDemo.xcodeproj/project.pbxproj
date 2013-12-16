@@ -15,25 +15,10 @@
 		BFBC5041185B24DA00CB3F4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBC5040185B24DA00CB3F4C /* main.m */; };
 		BFBC5045185B24DA00CB3F4C /* HLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBC5044185B24DA00CB3F4C /* HLAppDelegate.m */; };
 		BFBC5047185B24DA00CB3F4C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFBC5046185B24DA00CB3F4C /* Images.xcassets */; };
-		BFBC504E185B24DA00CB3F4C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBC504D185B24DA00CB3F4C /* XCTest.framework */; };
-		BFBC504F185B24DA00CB3F4C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBC5034185B24DA00CB3F4C /* Foundation.framework */; };
-		BFBC5050185B24DA00CB3F4C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBC5038185B24DA00CB3F4C /* UIKit.framework */; };
-		BFBC5058185B24DA00CB3F4C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BFBC5056185B24DA00CB3F4C /* InfoPlist.strings */; };
-		BFBC505A185B24DA00CB3F4C /* LoginDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBC5059185B24DA00CB3F4C /* LoginDemoTests.m */; };
 		BFBC5064185B24EB00CB3F4C /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBC5063185B24EB00CB3F4C /* FacebookSDK.framework */; };
 		BFBC506A185B2A7000CB3F4C /* HLLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBC5069185B2A7000CB3F4C /* HLLogInViewController.m */; };
 		BFC6901E185B3FC30093FB51 /* HLWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC6901D185B3FC30093FB51 /* HLWelcomeViewController.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		BFBC5051185B24DA00CB3F4C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFBC5029185B24DA00CB3F4C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BFBC5030185B24DA00CB3F4C;
-			remoteInfo = LoginDemo;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		BF5CC864185F0D7F00F4EB92 /* HLUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLUser.h; sourceTree = "<group>"; };
@@ -49,7 +34,6 @@
 		BFBC5043185B24DA00CB3F4C /* HLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLAppDelegate.h; sourceTree = "<group>"; };
 		BFBC5044185B24DA00CB3F4C /* HLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLAppDelegate.m; sourceTree = "<group>"; };
 		BFBC5046185B24DA00CB3F4C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		BFBC504C185B24DA00CB3F4C /* LoginDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFBC504D185B24DA00CB3F4C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		BFBC5055185B24DA00CB3F4C /* LoginDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LoginDemoTests-Info.plist"; sourceTree = "<group>"; };
 		BFBC5057185B24DA00CB3F4C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -73,16 +57,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BFBC5049185B24DA00CB3F4C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BFBC504E185B24DA00CB3F4C /* XCTest.framework in Frameworks */,
-				BFBC5050185B24DA00CB3F4C /* UIKit.framework in Frameworks */,
-				BFBC504F185B24DA00CB3F4C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -100,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				BFBC5031185B24DA00CB3F4C /* LoginDemo.app */,
-				BFBC504C185B24DA00CB3F4C /* LoginDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -199,24 +172,6 @@
 			productReference = BFBC5031185B24DA00CB3F4C /* LoginDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BFBC504B185B24DA00CB3F4C /* LoginDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BFBC5060185B24DA00CB3F4C /* Build configuration list for PBXNativeTarget "LoginDemoTests" */;
-			buildPhases = (
-				BFBC5048185B24DA00CB3F4C /* Sources */,
-				BFBC5049185B24DA00CB3F4C /* Frameworks */,
-				BFBC504A185B24DA00CB3F4C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BFBC5052185B24DA00CB3F4C /* PBXTargetDependency */,
-			);
-			name = LoginDemoTests;
-			productName = LoginDemoTests;
-			productReference = BFBC504C185B24DA00CB3F4C /* LoginDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -226,11 +181,6 @@
 				CLASSPREFIX = HL;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Hull;
-				TargetAttributes = {
-					BFBC504B185B24DA00CB3F4C = {
-						TestTargetID = BFBC5030185B24DA00CB3F4C;
-					};
-				};
 			};
 			buildConfigurationList = BFBC502C185B24DA00CB3F4C /* Build configuration list for PBXProject "LoginDemo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -245,7 +195,6 @@
 			projectRoot = "";
 			targets = (
 				BFBC5030185B24DA00CB3F4C /* LoginDemo */,
-				BFBC504B185B24DA00CB3F4C /* LoginDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -257,14 +206,6 @@
 			files = (
 				BFBC503F185B24DA00CB3F4C /* InfoPlist.strings in Resources */,
 				BFBC5047185B24DA00CB3F4C /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BFBC504A185B24DA00CB3F4C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BFBC5058185B24DA00CB3F4C /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,23 +224,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BFBC5048185B24DA00CB3F4C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BFBC505A185B24DA00CB3F4C /* LoginDemoTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		BFBC5052185B24DA00CB3F4C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BFBC5030185B24DA00CB3F4C /* LoginDemo */;
-			targetProxy = BFBC5051185B24DA00CB3F4C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BFBC503D185B24DA00CB3F4C /* InfoPlist.strings */ = {
@@ -427,48 +352,6 @@
 			};
 			name = Release;
 		};
-		BFBC5061185B24DA00CB3F4C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LoginDemo.app/LoginDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LoginDemo/LoginDemo-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "LoginDemoTests/LoginDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		BFBC5062185B24DA00CB3F4C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LoginDemo.app/LoginDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LoginDemo/LoginDemo-Prefix.pch";
-				INFOPLIST_FILE = "LoginDemoTests/LoginDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -486,15 +369,6 @@
 			buildConfigurations = (
 				BFBC505E185B24DA00CB3F4C /* Debug */,
 				BFBC505F185B24DA00CB3F4C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BFBC5060185B24DA00CB3F4C /* Build configuration list for PBXNativeTarget "LoginDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BFBC5061185B24DA00CB3F4C /* Debug */,
-				BFBC5062185B24DA00CB3F4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
