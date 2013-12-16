@@ -1,5 +1,5 @@
 //
-//  HLAppDelegate.h
+//  HLLogInViewController.h
 //  LoginDemo
 //
 //  Created by Jimmy Oliger on 13/12/2013.
@@ -7,13 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FacebookSDK/FacebookSDK.h>
 
 #import "HLUser.h"
-#import "HLLogInViewController.h"
 #import "HLWelcomeViewController.h"
 
-@interface HLAppDelegate : UIResponder <UIApplicationDelegate>
+@interface HLLogInViewController : UIViewController
 
-@property (strong, nonatomic) UIWindow *window;
+- (void)loginWithFacebook:(UIButton *)sender;
+- (void)presentWelcomeView;
 
 @end

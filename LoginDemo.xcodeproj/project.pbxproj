@@ -19,6 +19,10 @@
 		BFBC5050185B24DA00CB3F4C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBC5038185B24DA00CB3F4C /* UIKit.framework */; };
 		BFBC5058185B24DA00CB3F4C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BFBC5056185B24DA00CB3F4C /* InfoPlist.strings */; };
 		BFBC505A185B24DA00CB3F4C /* LoginDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBC5059185B24DA00CB3F4C /* LoginDemoTests.m */; };
+		BFBC5064185B24EB00CB3F4C /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBC5063185B24EB00CB3F4C /* FacebookSDK.framework */; };
+		BFBC506A185B2A7000CB3F4C /* HLLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBC5069185B2A7000CB3F4C /* HLLogInViewController.m */; };
+		BFC6901E185B3FC30093FB51 /* HLWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC6901D185B3FC30093FB51 /* HLWelcomeViewController.m */; };
+		BFC69024185B4AF50093FB51 /* HLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC69023185B4AF50093FB51 /* HLUser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,13 @@
 		BFBC5055185B24DA00CB3F4C /* LoginDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LoginDemoTests-Info.plist"; sourceTree = "<group>"; };
 		BFBC5057185B24DA00CB3F4C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BFBC5059185B24DA00CB3F4C /* LoginDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginDemoTests.m; sourceTree = "<group>"; };
+		BFBC5063185B24EB00CB3F4C /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		BFBC5068185B2A7000CB3F4C /* HLLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLogInViewController.h; sourceTree = "<group>"; };
+		BFBC5069185B2A7000CB3F4C /* HLLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLLogInViewController.m; sourceTree = "<group>"; };
+		BFC6901C185B3FC30093FB51 /* HLWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLWelcomeViewController.h; sourceTree = "<group>"; };
+		BFC6901D185B3FC30093FB51 /* HLWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLWelcomeViewController.m; sourceTree = "<group>"; };
+		BFC69022185B4AF50093FB51 /* HLUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HLUser.h; path = ../HLUser.h; sourceTree = "<group>"; };
+		BFC69023185B4AF50093FB51 /* HLUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HLUser.m; path = ../HLUser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFBC5064185B24EB00CB3F4C /* FacebookSDK.framework in Frameworks */,
 				BFBC5037185B24DA00CB3F4C /* CoreGraphics.framework in Frameworks */,
 				BFBC5039185B24DA00CB3F4C /* UIKit.framework in Frameworks */,
 				BFBC5035185B24DA00CB3F4C /* Foundation.framework in Frameworks */,
@@ -96,6 +108,7 @@
 		BFBC5033185B24DA00CB3F4C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BFBC5063185B24EB00CB3F4C /* FacebookSDK.framework */,
 				BFBC5034185B24DA00CB3F4C /* Foundation.framework */,
 				BFBC5036185B24DA00CB3F4C /* CoreGraphics.framework */,
 				BFBC5038185B24DA00CB3F4C /* UIKit.framework */,
@@ -109,6 +122,8 @@
 			children = (
 				BFBC5043185B24DA00CB3F4C /* HLAppDelegate.h */,
 				BFBC5044185B24DA00CB3F4C /* HLAppDelegate.m */,
+				BFC69025185B4B020093FB51 /* Models */,
+				BFC69026185B4B100093FB51 /* Controllers */,
 				BFBC5046185B24DA00CB3F4C /* Images.xcassets */,
 				BFBC503B185B24DA00CB3F4C /* Supporting Files */,
 			);
@@ -142,6 +157,26 @@
 				BFBC5056185B24DA00CB3F4C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BFC69025185B4B020093FB51 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BFC69022185B4AF50093FB51 /* HLUser.h */,
+				BFC69023185B4AF50093FB51 /* HLUser.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		BFC69026185B4B100093FB51 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BFBC5068185B2A7000CB3F4C /* HLLogInViewController.h */,
+				BFBC5069185B2A7000CB3F4C /* HLLogInViewController.m */,
+				BFC6901C185B3FC30093FB51 /* HLWelcomeViewController.h */,
+				BFC6901D185B3FC30093FB51 /* HLWelcomeViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,8 +275,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFBC506A185B2A7000CB3F4C /* HLLogInViewController.m in Sources */,
 				BFBC5045185B24DA00CB3F4C /* HLAppDelegate.m in Sources */,
 				BFBC5041185B24DA00CB3F4C /* main.m in Sources */,
+				BFC6901E185B3FC30093FB51 /* HLWelcomeViewController.m in Sources */,
+				BFC69024185B4AF50093FB51 /* HLUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +398,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Jimmy/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LoginDemo/LoginDemo-Prefix.pch";
 				INFOPLIST_FILE = "LoginDemo/LoginDemo-Info.plist";
@@ -373,6 +415,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Jimmy/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LoginDemo/LoginDemo-Prefix.pch";
 				INFOPLIST_FILE = "LoginDemo/LoginDemo-Info.plist";
@@ -442,6 +488,7 @@
 				BFBC505F185B24DA00CB3F4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BFBC5060185B24DA00CB3F4C /* Build configuration list for PBXNativeTarget "LoginDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +497,7 @@
 				BFBC5062185B24DA00CB3F4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
