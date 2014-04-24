@@ -39,7 +39,7 @@ static HLUser *__currentUser = nil;
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     
     [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-    [request setValue:@"5113eca4fc62d87574000096" forHTTPHeaderField:@"Hull-App-Id"];
+    [request setValue:@"53593c49dee7490ced00071e" forHTTPHeaderField:@"Hull-App-Id"];
     [request setValue:token forHTTPHeaderField:@"Hull-Access-Token"];
     request.HTTPMethod = @"GET";
     
@@ -81,7 +81,7 @@ static HLUser *__currentUser = nil;
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     
     [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-    [request setValue:@"5113eca4fc62d87574000096" forHTTPHeaderField:@"Hull-App-Id"];
+    [request setValue:@"53593c49dee7490ced00071e" forHTTPHeaderField:@"Hull-App-Id"];
     request.HTTPMethod = @"POST";
     request.HTTPBody = json;
     
